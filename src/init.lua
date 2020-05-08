@@ -9,7 +9,7 @@
 			exitAction?=(): (oldState: string, newState: string, ...args: any)
 			stateByInput: {string: string}
 	
-	Machine.input(input, ...args: any) => didChange: boolean
+	Machine.input(input: string, ...args: any) => didChange: boolean
 		Transition to the next state if the current state supports a transition with input, and pass args to the transition actions.
 
 	Machine.disable()
