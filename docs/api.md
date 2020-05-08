@@ -9,6 +9,7 @@ StateMachine.create(
 ```
 Create and return a new state *Machine* based on the arguments passed.
 *infoByState* should be a dictionary including the following key-value pairs:
+
 * `entryAction?=(): (oldState: string, newState: string, ...args: any)`
 * `exitAction?=(): (oldState: string, newState: string, ...args: any)`
 * `stateByInput: {string: string}`
