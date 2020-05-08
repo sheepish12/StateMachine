@@ -60,4 +60,4 @@ Machine.stateChanged: RBXScriptSignal<oldState: string, newState: string, ...arg
 ```
 
 !!! note
-	This property should be documented in more detail.
+	This signal should be documented in more detail.
