@@ -2,7 +2,10 @@
 
 ### StateMachine.create
 ```
-StateMachine.create(infoByState: {string: {...}}, initialState: string) => machine: Machine
+StateMachine.create(
+	infoByState: {string: {...}},
+	initialState: string
+) => machine: Machine
 ```
 Create and return a new state *Machine* based on the arguments passed.
 *infoByState* should be a dictionary including the following key-value pairs:
@@ -14,7 +17,10 @@ Create and return a new state *Machine* based on the arguments passed.
 
 ### Machine.input
 ```
-Machine.input(input, ...args: any) => didChange: boolean
+Machine.input(
+	input: string,
+	...args: any
+) => didChange: boolean
 ```
 Transition to the next state if the current state supports a transition with *input*, and pass *args* to the transition actions.
 
