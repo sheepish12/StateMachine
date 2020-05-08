@@ -57,7 +57,11 @@ Machine.isChangingState: boolean
 
 ### Machine.stateChanged
 ```
-Machine.stateChanged: RBXScriptSignal<oldState: string, newState: string, ...args: any>
+Machine.stateChanged: RBXScriptSignal<
+	oldState: string,
+	newState: string,
+	...args: any
+>
 ```
 
 !!! note
